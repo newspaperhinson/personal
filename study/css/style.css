@@ -2,7 +2,7 @@ h2:hover {
     color: red;
 }
 
-.subtitle {
+h2[class=subtitle] {
     color: blue;
 }
 
@@ -10,17 +10,44 @@ h2:hover {
     color: green;
 }
 
-li:only-child {
+/* li:only-child {
     color: purple;
-}
+} */
 td:only-child {
     color: purple;
 }
 
-#google-link:link {
+/* #google-link:link {
     color:blue
 }
 
 #google-link:visited {
     color: red;
+} */
+
+/* style for a after h2 */
+h2 + a {
+    color: red;
 }
+/* style for button after textarea within the same parent */
+textarea ~ button {
+    color: purple;
+}
+
+/* select child of ul (1 layer only) */
+ul > li {
+    color: blue;
+}
+/* every li inside ul */
+ul li {
+    color: green;
+}
+/* ^= starts with, $= ends with, *= contains */
+img[src^="../html/img/"] {
+    border: 10px solid black;
+}
+/* ~= contains but more specific in whitespace */
+h2[class~=article-subtitle] {
+    background: green;
+}
+
