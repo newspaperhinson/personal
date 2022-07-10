@@ -1,4 +1,4 @@
-h2:hover {
+/* h2:hover {
     color: red;
 }
 
@@ -9,14 +9,14 @@ h2[class=subtitle] {
 #services {
     color: green;
 }
-
+ */
 /* li:only-child {
     color: purple;
 } */
-td:only-child {
+/* td:only-child {
     color: purple;
 }
-
+ */
 /* #google-link:link {
     color:blue
 }
@@ -26,28 +26,63 @@ td:only-child {
 } */
 
 /* style for a after h2 */
-h2 + a {
+/* h2 + a {
     color: red;
-}
+} */
 /* style for button after textarea within the same parent */
-textarea ~ button {
+/* textarea ~ button {
     color: purple;
-}
+} */
 
 /* select child of ul (1 layer only) */
-ul > li {
+/* ul > li {
     color: blue;
-}
+} */
 /* every li inside ul */
-ul li {
+/* ul li {
     color: green;
-}
+} */
 /* ^= starts with, $= ends with, *= contains */
-img[src^="../html/img/"] {
+/* img[src^="../html/img/"] {
     border: 10px solid black;
-}
+} */
 /* ~= contains but more specific in whitespace */
-h2[class~=article-subtitle] {
+/* h2[class~=article-subtitle] {
     background: green;
+} */
+body {
+    background: linear-gradient(to bottom,rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
+    font-size: 1.15em;
+    text-align: justify;
+    font-family: "Arial", sans-serif;
 }
 
+#title {
+    color: rgb(186, 133, 9);
+    font-weight: 0;
+}
+
+.subtitle{
+    color: rgb(200, 148, 30);
+}
+
+#service-image {
+    height: 400px;
+    width: 70vw;
+
+    background: radial-gradient(circle, red 20%, blue 40%, green 55%);
+    border: 10px solid rgb(28, 28, 79);
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.italics {
+    font-style: italic;
+}
+
+#about-us-image {
+    height: 300px;
+    width: 60vw;
+}

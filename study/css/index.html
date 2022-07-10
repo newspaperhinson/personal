@@ -6,38 +6,36 @@
     </head>
     <body>
         
-        <h1>My Website</h1>
+        <h1 id="title">My Website</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.</p>
         
-        <h2 class="subtitle article-subtitle">About Me</h2>
+        <h2 class="subtitle">About Me</h2>
         
-        <img src="../html/img/nene1.jpg" alt="">
+        <img src="../html/img/nene1.jpg" id="about-us-image">
 
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+        <p class="para-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cipidatat non
         proidnet, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <span class="italics">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
         Cillum dolore eu fugiat nulla , pariatur:
 
             <ul>
-                <li>Excepteur sint occarcat</li>
-                <li>
-                    <ol>
-                        <li>My numbered list item</li>
-                    </ol>
-                </li>
+                <li class="list-item">Excepteur sint occarcat</li>
+                <ol>
+                    <li class="list-item">My numbered list item</li>
+                </ol>
             </ul>
         </p>
 
-        <h2 class="subtitle" id="services" style="color: steelblue;">Services</h2>
+        <h2 class="subtitle">Services</h2>
 
-        <a href="http://www.google.com" id="google-link">Click here to go to Google</a>
+        <a href="http://www.google.com" class="link">Click here to go to Google</a>
 
         <table border="1">
             <thead>
@@ -61,13 +59,13 @@
             </tbody>
         </table>
 
-        <img src="../html/img/nene2.jpg">
+        <div id="service-image"></div>
 
-        <h2>Contact Us</h2>
+        <h2 class="subtitle">Contact Us</h2>
 
         <form>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Full Name" class="form-input">
+            <input type="email" placeholder="Email" class="form-input">
             <textarea></textarea>
             <button>Submit</button>
         </form>
