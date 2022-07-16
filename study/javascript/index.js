@@ -90,3 +90,52 @@
 //                              console.log("THis always executes");
 //                          }
 //  -------------------------------------------------------------------------------------------
+//  setTimeout(callBack, ms)    :   invokes callBack function after some milliseconds, asynchronous function (doesnt stop execution)
+//                          
+//                          setTimeout(firstMessage, 3000);
+//                          setTimeout(secondMessage, 6000);
+//                          setTimeout(thirdMessage, 9000);
+//
+//                          function firstMessage() {
+//                              alert("First alert");
+//                          }
+//                          function secondMessage() {
+//                              alert("Second alert");
+//                          }
+//                          function thirdMessage() {
+//                              alert("Third alert");
+//                          }
+//-------------------------------------------------------------------------------------------
+//  setInterval(callBack, ms)    :   invokes callBack function after some milliseconds repeatedly, asynchronous function (doesnt stop execution)
+//                          
+//                          let count = 0;
+//                          let max = window.prompt("Count up to what #?");
+//                          max = Number(max);
+//
+//                          const myTimer = setInterval(countUp , 1000);
+//                          
+//                          function countUp() {
+//                              count+= 1;
+//                              consol.log(count);
+//                              if(count >= max) {
+//                                  clearInterval(myTimer);
+//                              }
+//                          }
+//-------------------------------------------------------------------------------------------
+//  date object             :   date.toLocaleString() return the datetime string
+//                              constructor(year, month, day, hour, minute, second, ms) / constructor("January 1, 2023 00:00:00")
+//                          
+//                          let count = 0;
+//                          let max = window.prompt("Count up to what #?");
+//                          max = Number(max);
+//
+//                          const myTimer = setInterval(countUp , 1000);
+//                          
+//                          function countUp() {
+//                              count+= 1;
+//                              consol.log(count);
+//                              if(count >= max) {
+//                                  clearInterval(myTimer);
+//                              }
+//                          }
+//-------------------------------------------------------------------------------------------
