@@ -139,3 +139,110 @@
 //                              }
 //                          }
 //-------------------------------------------------------------------------------------------
+//  synchronous code        :   In an ordered sequence. Step by step linear instrcutions
+//                          
+//  asynchronous code       :   Out of sequence (Access database, fetch a file, tasks that takes time)
+//                          let max = window.prompt("Count up to what #?");
+//                          max = Number(max);
+//
+//                          const myTimer = setInterval(countUp , 1000);
+//                          
+//                          function countUp() {
+//                              count+= 1;
+//                              consol.log(count);
+//                              if(count >= max) {
+//                                  clearInterval(myTimer);
+//                              }
+//                          }
+//-------------------------------------------------------------------------------------------
+//  console.time(str)               :   Starts a timer to track how long an operation take
+//                          
+//  console.timeEnd(str)            :   End the timer
+//                          let max = window.prompt("Count up to what #?");
+//                          max = Number(max);
+//
+//                          const myTimer = setInterval(countUp , 1000);
+//                          
+//                          function countUp() {
+//                              count+= 1;
+//                              consol.log(count);
+//                              if(count >= max) {
+//                                  clearInterval(myTimer);
+//                              }
+//                          }
+//-------------------------------------------------------------------------------------------
+//  console.time(str)               :   Starts a timer to track how long an operation take
+//                          
+//  console.timeEnd(str)            :   End the timer
+//                          let max = window.prompt("Count up to what #?");
+//                          max = Number(max);
+//
+//                          const myTimer = setInterval(countUp , 1000);
+//                          
+//                          function countUp() {
+//                              count+= 1;
+//                              consol.log(count);
+//                              if(count >= max) {
+//                                  clearInterval(myTimer);
+//                              }
+//                          }
+//-------------------------------------------------------------------------------------------
+//  Promise(resolve, reject)        :   Objects that encapsulates results of asynchronous function
+//                                  function myDisplayer(some) {
+//                                      document.getElementById("demo").innerHTML = some;
+//                                    }
+//                                    
+//                                    let myPromise = new Promise(function(myResolve, myReject) {
+//                                      let x = 0;
+//                                    
+//                                    // The producing code (this may take some time)
+//                                    
+//                                      if (x == 0) {
+//                                        myResolve("OK");
+//                                      } else {
+//                                        myReject("Error");
+//                                      }
+//                                    });
+//                                    
+//                                    myPromise.then(
+//                                      function(value) {myDisplayer(value);},
+//                                      function(error) {myDisplayer(error);}
+//                                    );
+//-------------------------------------------------------------------------------------------
+//  async keyword                    :     define functions that returns a Promise
+//                                   
+//                                      async function leadFile(){
+//                                          let fileLoaded = false;
+//                                    
+//                                          if(fileLoaded){
+//                                              return "File loaded";
+//                                          }
+//                                          else{
+//                                              throw "File NOT loaded";
+//                                          }
+//                                      loadFile().then(value => console.log(value)).catch(error => console.log(error));
+//-------------------------------------------------------------------------------------------
+//  await keyword                    :     makes an async function wait for a Promise
+//                                   
+//                                      async function loadFile(){
+//                                          let fileLoaded = false;
+//                                    
+//                                          if(fileLoaded){
+//                                              return "File loaded";
+//                                          }
+//                                          else{
+//                                              throw "File NOT loaded";
+//                                          }
+//                                      
+//                                      async function startProcess(){
+//                                          try{
+//                                              let message = await loadFile();
+//                                              console.log(message);
+//                                          }
+//                                          catch(error) {
+//                                              console.log(error);
+//                                          }
+//                                      }
+//-------------------------------------------------------------------------------------------
+//  .addEventListener(event, function, useCapture)  :     makes an async function wait for a Promise
+//-------------------------------------------------------------------------------------------
