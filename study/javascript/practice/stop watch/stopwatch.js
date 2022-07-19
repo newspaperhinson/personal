@@ -48,3 +48,16 @@ resetButton.onclick = () => {
     second = 0;
     timeText.textContent = formatTime();
 }
+
+startButton.addEventListener("mouseover", function (event) {
+    event.target.style.backgroundColor = "green";
+}, false);
+startButton.addEventListener("mouseout", event => {
+    event.target.style.backgroundColor = "blue";
+});
+startButton.addEventListener("click", event => {
+    event.target.style.backgroundColor = "lightblue";
+});
+startButton.addEventListener("mouseup", event => {
+    event.target.style.backgroundColor = "blue";
+});
