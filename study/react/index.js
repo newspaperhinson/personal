@@ -1,9 +1,33 @@
-/* function Comp() {
-  return ( <h1> As usual we can call the function using component call</h1>);
-  }
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.render(<Comp/>, document.getElementById('root')); */
-function MainContent() {
-    return (<h1>I'm learning react!</h1>);
-}
-ReactDOM.render(<MainContent/>, document.getElementById('root'));
+// class Clock extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {date: new Date()};
+//   }
+
+//   componentDidMount() {
+//     this.timerID = setInterval(
+//       () => this.tick(),
+//       1000
+//     );
+//   }
+
+//   ComponentWillUnMount() {
+//     clearInterval(this.timerID);
+//   }
+
+//   tick() {
+//     this.setState({date: new Date()});
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hello world!</h1>
+//         <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+//       </div>
+//     );
+//   }
+// }
+// root.render(<Clock/>);
